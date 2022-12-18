@@ -9,7 +9,6 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },
-  { path: 'shopping-list', component: ShoppingListComponent },
   {
     path: 'recipes',
     component: RecipesComponent,
@@ -20,6 +19,7 @@ const appRoutes: Routes = [
       { path: ':id/edit', component: RecipeEditComponent },
     ],
   },
+  { path: 'shopping-list', component: ShoppingListComponent },
 ];
 
 @NgModule({
